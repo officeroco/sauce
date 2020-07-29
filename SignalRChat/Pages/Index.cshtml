@@ -1,0 +1,40 @@
+﻿@page
+    <div class="container">
+        <div class="row">&nbsp;</div>
+
+        <!-- 名前の入力領域-->
+        <div class="row">
+            <div class="col-2">User</div>
+            <div class="col-6"><input type="text" id="userInput" placeholder="名前を入力してください" /></div>
+        </div>
+
+        <!-- メッセージの入力領域-->
+        <div class="row">
+            <div class="col-2">Message</div>
+            <div class="col-6"><input type="text" id="messageInput" placeholder="メッセージを入力にしてください" /></div>
+        </div>
+
+        <!-- ボタンの表示領域-->
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-6">
+                <input type="button" id="sendButton" value="Send Message" />
+            </div>
+        </div>
+
+    </div>
+<div class="row">
+    <div class="col-12">
+        <hr />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+
